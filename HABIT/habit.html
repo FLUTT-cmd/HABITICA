@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABITICA</title>
+    <link rel="stylesheet" href="visual.css">
+    <!-- Подключаем наш JavaScript файл -->
+    <script src="interact.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>HABITICA</h1>
+        <p>Всё в твоих руках!</p>
+    </header>
+    <img src="HABIT/eee.png">
+
+    <main>
+        <section id="add-habit">
+            <h2>Добавить новый хабит</h2>
+            <form id="habit-form">
+                <label for="habit-name">Название хабита:</label>
+                <input type="text" id="habit-name" name="habit-name" required>
+
+                <label for="habit-frequency">Насколько часто:</label>
+                <select id="habit-frequency" name="habit-frequency">
+                    <option value="daily">Ежедневно</option>
+                    <option value="weekly">Еженедельно</option>
+                    <option value="hourly">Ежечасно</option>
+                    <option value="morning">Каждое утро</option>
+                    <option value="evening">Каждый вечер</option>
+                </select>
+
+                <button type="submit">Добавить</button>
+            </form>
+        </section>
+
+        <section id="habits-list">
+            <h2>Мои привычки</h2>
+            <ul id="habits">
+                <!-- Здесь будут динамически добавляться привычки -->
+            </ul>
+        </section>
+
+        <section id="progress-stats">
+            <h2>Статистика</h2>
+            <div id="stats-content">
+                <p>Всего привычек: <span id="total-habits">0</span></p>
+                <p>Выполнено сегодня: <span id="completed-today">0</span></p>
+                <p>Общий процент выполнения: <span id="overall-completion">0%</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025_FLUTTcmd :D</p>
+    </footer>
+
+</body>
+</html>
