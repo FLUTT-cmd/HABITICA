@@ -9,7 +9,7 @@
     --pastel-card-bg: #f0f8ff; /* Фон карточек (AliceBlue) */
     --pastel-text: #555; /* Немного более мягкий темный текст */
     --pastel-accent-hover: #8eb9d5; /* Цвет при наведении на синий */
-    --pastel-success-hover: #7cb77c; /* Цвет при наведении на зеленый */
+    --pastel-success-hover: linear-gradient(to left, rgb(160 92 190), rgb(255 214 138));
     --pastel-danger-hover: #d4a2b2; /* Цвет при наведении на красный/розовый */
 }
 
@@ -210,4 +210,5 @@ footer {
         margin-left: 0; /* Убираем лишний отступ */
         width: auto; /* Или задаем конкретную ширину */
     }
+
 }
